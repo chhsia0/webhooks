@@ -378,6 +378,10 @@ type Repository struct {
 		Avatar struct {
 			Href string `json:"href"`
 		} `json:"avatar"`
+		Clone []struct {
+			Name string `json:"name"`
+			Href string `json:"href"`
+		} `json:"clone"`
 	} `json:"links"`
 	UUID      string  `json:"uuid"`
 	Project   Project `json:"project"`
